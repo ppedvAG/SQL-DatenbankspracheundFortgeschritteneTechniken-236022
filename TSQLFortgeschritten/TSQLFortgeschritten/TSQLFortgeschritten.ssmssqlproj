@@ -61,6 +61,12 @@
           <AssociatedConnUserName />
           <FullPath>02_Good procedure bad procedure.sql</FullPath>
         </FileNode>
+        <FileNode Name="02_Kompression.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>02_Kompression.sql</FullPath>
+        </FileNode>
         <FileNode Name="02_Seiten DBDesign.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
@@ -253,18 +259,6 @@
           <AssociatedConnUserName />
           <FullPath>Sperren beobachten.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery1.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:sa</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
-          <AssociatedConnUserName>sa</AssociatedConnUserName>
-          <FullPath>SQLQuery1.sql</FullPath>
-        </FileNode>
-        <FileNode Name="SQLQuery2.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:sa</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
-          <AssociatedConnUserName>sa</AssociatedConnUserName>
-          <FullPath>SQLQuery2.sql</FullPath>
-        </FileNode>
         <FileNode Name="Throw.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
@@ -277,11 +271,11 @@
           <AssociatedConnUserName />
           <FullPath>TX_.sql</FullPath>
         </FileNode>
-        <FileNode Name="TX_Verschaschtelte Transactions.sql">
+        <FileNode Name="TX_Verschachtelte Transactions.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>TX_Verschaschtelte Transactions.sql</FullPath>
+          <FullPath>TX_Verschachtelte Transactions.sql</FullPath>
         </FileNode>
         <FileNode Name="Z_Indexsehen.sql">
           <AssociatedConnectionMoniker />
