@@ -42,9 +42,9 @@ je meher normalisiert wird, desto mehr joins, desto höher der Aufwand
 fixe Länge char bei fixen Längen
 varchar bei flexiblen Längen
 
-Datum : kein Datetie, wenn die Zeit egal ist..
+Datum : kein Datetime, wenn die Zeit egal ist..
 
-datetime (ms) wird al ganze Zahl gespeichert (2 bis3 ms.. aso etwas ungenau)
+datetime (ms) wird als ganze Zahl gespeichert (2 bis3 ms.. aso etwas ungenau)
 datetime2 (ns)
 date 
 time
@@ -58,6 +58,69 @@ select * from orders where year(orderdate) = 1997 --korrekt aber langsam
 select * from orders where orderdate like '%1997%' -- korrekt aber langsam
 select * from orders where orderdate between '1.1.1997' and '31.12.1997 23:59:59.999' --falsch, aber richtig, und schnell
 select * from orders where orderdate >= '1.1.1997'   and orderdate < '1.1.1998' --korrekt und schnell
+
+
+--DB  Design phsikalisch
+
+create table test1(id int identity, spx char(4100))--müsste 80MB sein
+
+insert into test1
+select 'XY'
+GO 20000
+
+select count(*) from test1
+
+
+
+set statistics io, time on --Anzahl der Seiten (IO) , Dauer in ms, CPU Zeit in ms
+--nur messen wenn notwendig.. vorsicht bei Schleifen
+
+--Ausführungspläne
+
+
+create table test2 (id int identity, psx char(4100), spy char(4100))
+
+select * from test1 where id = 100
+--20000 Seiten * 8 KB = 160MB
+
+
+--einfache Möglichkeit das zu messen
+dbcc showcontig('test1')
+--- Mittlere Seitendichte (voll).....................: 91.79%-- 100-% * 8kb* Seiten
+--- Gescannte Seiten.............................: 2343420643
+
+
+
+
+
+
+--Normalerweise 40-60%kompression (text besser als Zahlen)
+
+--Kompression ist transparent zu Client
+--CRM : Fax1 Fax2 Fax3 Frau1 Frau2 Frau3 Frau4 Religion 
+--NULL kostet auch Platz  NULL ist nicht 0 oder ''
+
+--Kunden ..--> Kundenstamm und Kundensonstiges
+
+USE [Northwind]
+ALTER TABLE [dbo].[test1] REBUILD PARTITION = ALL
+WITH
+(DATA_COMPRESSION = PAGE
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
