@@ -4,7 +4,7 @@
     <LogicalFolder Name="Verbindungen" Type="2" Sorted="true">
       <Items>
         <ConnectionNode Name="(local):BIGBEN\Administrator">
-          <Created>2023-12-10T21:00:05.7802333+01:00</Created>
+          <Created>2023-12-12T09:51:07.2431034+01:00</Created>
           <Type>SQL</Type>
           <Server>(local)</Server>
           <UserName />
@@ -28,7 +28,7 @@
           <ApplicationName>Microsoft SQL Server Management Studio - Abfrage</ApplicationName>
         </ConnectionNode>
         <ConnectionNode Name="BIGBEN:BIGBEN\Administrator">
-          <Created>2023-12-11T16:33:28.3963592+01:00</Created>
+          <Created>2023-12-12T13:58:39.2880454+01:00</Created>
           <Type>SQL</Type>
           <Server>BIGBEN</Server>
           <UserName />
@@ -62,8 +62,8 @@
           <FullPath>02_Good procedure bad procedure.sql</FullPath>
         </FileNode>
         <FileNode Name="02_Kompression.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>02_Kompression.sql</FullPath>
         </FileNode>
@@ -86,8 +86,8 @@
           <FullPath>04_part Sicht.sql</FullPath>
         </FileNode>
         <FileNode Name="04_Partitionierung.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>04_Partitionierung.sql</FullPath>
         </FileNode>
@@ -96,6 +96,12 @@
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>05_FileStreaming_Tables.sql</FullPath>
+        </FileNode>
+        <FileNode Name="05_Indizes.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>05_Indizes.sql</FullPath>
         </FileNode>
         <FileNode Name="09_QueryStore_1_Demo.sql">
           <AssociatedConnectionMoniker />
@@ -146,8 +152,8 @@
           <FullPath>16_TemporalTables_2_Demo.sql</FullPath>
         </FileNode>
         <FileNode Name="17_TemporalTables_Cascade.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>17_TemporalTables_Cascade.sql</FullPath>
         </FileNode>
@@ -259,6 +265,12 @@
           <AssociatedConnUserName />
           <FullPath>Sperren beobachten.sql</FullPath>
         </FileNode>
+        <FileNode Name="Spieltabelle mit ID.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Spieltabelle mit ID.sql</FullPath>
+        </FileNode>
         <FileNode Name="Throw.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
@@ -282,6 +294,18 @@
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Z_Indexsehen.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Z_SQL Server 2022 Diagnostic Information Queries.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Z_SQL Server 2022 Diagnostic Information Queries.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Z_Wait_Stats.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Z_Wait_Stats.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

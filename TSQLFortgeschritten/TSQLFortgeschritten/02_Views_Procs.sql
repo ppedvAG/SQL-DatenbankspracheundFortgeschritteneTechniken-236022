@@ -60,28 +60,6 @@ exec gpdemo 10
 select * from orders where orderid = 10250
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 select * from slf
 select * from vslf --fluss
 
@@ -90,6 +68,71 @@ alter table slf drop column land
 select * from vslf
 
 
+create proc ProcName @par1 int, ... , @par2 int output
+as
+Code...(SEL INS UP DEL EXEC Proc)
+GO
+
+
+--Idee
+set statistics io, time on
+select * from kundeumsatz where id < 10;
+GO
+
+create proc gpdemox @zahl int
+as
+ select * from kundeumsatz where id < @zahl	;
+ GO
+
+ exec gpdemox 10
+
+
+ dbcc freeproccache
+
+
+select * from kundeumsatz where id < 500000;
+
+
+exec gpKundenSuche 	  'A' --4
+exec gpKundenSuche 	  'ALFKI' --1
+exec gpKundenSuche 	  '%' -- alle		oder alternativ nichts angeben , dann auch alle
+
+
+select * from customers where customerid 	--nchar(5)
+
+
+ create or alter proc gpKundenSuche @CustId nvarchar(5)	  ='%'		  --default WERT
+ as
+ select * from customers where customerid like @CustId	+'%'	;
+ GO
+
+exec gpKundenSuche 	  'A%' --4
+exec gpKundenSuche 	  'ALFKI' --1
+exec gpKundenSuche 	  
+
+
+create or alter proc gpKundenSuche @CustId nvarchar(5)	  ='%'		  --default WERT
+ as
+ if @CustId ='%' exec gpKundenSucheScan
+ else
+ exec gpKundenSucheSeek
+ 
+ select * from customers where customerid like @CustId	+'%'	;
+ GO
+
+
+declare @var as varchar(150)
+... 50%
+
+select .. @var --> 1000 DS
+order by 
+
+create proc gpdemoy @par int
+as
+If @par = 1
+	select * from orders where orderid < 100	 
+else
+ select * from customers where country = 'USA'
 
 
 
