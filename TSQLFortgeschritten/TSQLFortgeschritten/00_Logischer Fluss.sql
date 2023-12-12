@@ -13,16 +13,18 @@ from Orders o
 where 
 			o.Freight< 1
 group by Lieferkosten
-order by	Lieferkosten
+order by	SummeLieferkosten
 
---FROM --> JOIN--> WHERE --> GROUP BY --> SELECT (Alias)-->  Order by 
+--FROM --> JOIN--> WHERE --> GROUP BY --> HAVING --> SELECT (Alias)-->  Order by 
 ----> TOP /Distinct --> Ausgabe
 
 
-select shipcountry, customerid, sum(freight) as Fracht
-from orders
-where shipcountry = 'USA'
-group by shipcountry, customerid having sum(freight)  > 200
+select shipcountry,
+	--, customerid, sum(freight) as Fracht
+from	orders
+where	shipcountry = 'USA'
+group by 
+	shipcountry, customerid having sum(freight)  > 200
 
 
 --doof besser im where

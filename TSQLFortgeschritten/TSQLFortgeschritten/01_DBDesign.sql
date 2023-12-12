@@ -91,7 +91,7 @@ dbcc showcontig('test1')
 
 
 
-
+dbcc showcontig()
 
 
 --Normalerweise 40-60%kompression (text besser als Zahlen)

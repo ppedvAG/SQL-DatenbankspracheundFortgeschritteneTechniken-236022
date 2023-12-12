@@ -44,6 +44,16 @@ select * from UMSATZ --Sicht=gemerkte Abfrage
 
 --Problem: bei Insert
 --aber dann darf kein identity, PK muss eindeutig über die Sicht (jahr und id)
+USE [Northwind]
+GO
+
+ALTER TABLE [dbo].[u2021]  WITH CHECK ADD  CONSTRAINT [CK_u2021]
+CHECK  (([jahr]=(2021)))
+GO
+
+ALTER TABLE [dbo].[u2021] CHECK CONSTRAINT [CK_u2021]
+GO
+
 
 
 create table test2 (id int) on HOT
