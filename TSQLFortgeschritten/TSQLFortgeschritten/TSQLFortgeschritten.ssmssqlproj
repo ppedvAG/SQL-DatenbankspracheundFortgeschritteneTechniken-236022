@@ -115,17 +115,35 @@
           <AssociatedConnUserName />
           <FullPath>09_QueryStore_2_Demo.sql</FullPath>
         </FileNode>
+        <FileNode Name="10-Temporäre Tabellen.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>10-Temporäre Tabellen.sql</FullPath>
+        </FileNode>
         <FileNode Name="11_UNION_EXCEPT_INTERSECT.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>11_UNION_EXCEPT_INTERSECT.sql</FullPath>
         </FileNode>
+        <FileNode Name="11_Zeilenversionierung.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>11_Zeilenversionierung.sql</FullPath>
+        </FileNode>
         <FileNode Name="12_IM_CS.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>12_IM_CS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="12_Joinarten.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>12_Joinarten.sql</FullPath>
         </FileNode>
         <FileNode Name="13_CS_1_Demo.sql">
           <AssociatedConnectionMoniker />

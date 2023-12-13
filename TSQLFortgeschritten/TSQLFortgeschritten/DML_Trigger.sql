@@ -56,17 +56,52 @@ select * from [order details]
 
 
 
-update ku1 set city = 'BGH' where id = 10
+
 
 select APP_NAME(), HOST_NAME(),SUSER_NAME(), Getdate()
 
 
 
+---dml  DDL
 
-begin tran 
-update orders set shipcity = 'BGH'
-select * from orders
+--IS UP DEL  DML
+--CR AL DR   DDL
+
+select  app_name(), getdate(), host_name() , suser_name()
+
+
+
+alter table orders add Rngsumme money
+
+select * from [Order Details]
+
+create trigger	trgRngSumme on [order details]
+for insert, update, delete
+as
+	BEGIN
+
+	select isnull
+	update orders set RngSumme 	 =
+				 				 (select sum(unitprice*quantity) 
+								  from [Order Details]
+								  where orderid = (select top 1 orderid 
+								                   from inserted )
+							      )  where orderid= 	 (select top 1 orderid 
+								                          from inserted )
+
+
+	END
+
+Begin tran
+update [order details] set Quantity = 10 
+	where orderid = 10248
+			and 	
+	 	productid = 42
+
 rollback
+
+select * from orders
+
 
 
 --trgRngSumme
