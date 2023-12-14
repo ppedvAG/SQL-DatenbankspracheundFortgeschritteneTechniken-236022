@@ -187,18 +187,6 @@
           <AssociatedConnUserName />
           <FullPath>22_GraphDatabases.sql</FullPath>
         </FileNode>
-        <FileNode Name="50_TemporalTables_1_Aktivieren.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
-          <FullPath>50_TemporalTables_1_Aktivieren.sql</FullPath>
-        </FileNode>
-        <FileNode Name="50_TemporalTables_2_Demo.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
-          <FullPath>50_TemporalTables_2_Demo.sql</FullPath>
-        </FileNode>
         <FileNode Name="CTE Aufbau.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
@@ -288,12 +276,6 @@
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>instnwnd.sql</FullPath>
-        </FileNode>
-        <FileNode Name="Pivotieren.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
-          <FullPath>Pivotieren.sql</FullPath>
         </FileNode>
         <FileNode Name="Sperren beobachten.sql">
           <AssociatedConnectionMoniker />
