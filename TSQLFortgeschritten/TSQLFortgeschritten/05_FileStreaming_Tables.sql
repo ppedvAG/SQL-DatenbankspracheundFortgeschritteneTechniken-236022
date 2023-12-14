@@ -91,7 +91,7 @@ USE [master]
 GO
 ALTER DATABASE [Fulltextdemo]
 	ADD FILE ( NAME = N'FulltextDB',
-		FILENAME = N'C:\_BOOMDB\FulltextDB' ) TO FILEGROUP [FS]
+		FILENAME = N'C:\_sqLDATA\FulltextDB' ) TO FILEGROUP [FS]
 GO
 
 --Pfade ergeben sich aus: \\servername\Name der Freigabe pro Instanz\Freigabename der DB\Verzeichnis der Tabelle

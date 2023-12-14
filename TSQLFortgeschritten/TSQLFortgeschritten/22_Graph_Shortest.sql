@@ -19,6 +19,8 @@ CREATE TABLE Persons (
   name VARCHAR(100)
 ) AS NODE;
 
+select * from persons
+
 CREATE TABLE Restaurant (
   ID INTEGER NOT NULL,
   name VARCHAR(100),
@@ -34,6 +36,9 @@ CREATE TABLE City (
 -- Create EDGE tables.
 CREATE TABLE likes (rating INTEGER) AS EDGE;
 CREATE TABLE friendsOf AS EDGE;
+
+select * from likes
+
 CREATE TABLE livesIn AS EDGE;
 CREATE TABLE locatedIn AS EDGE;
 
@@ -55,6 +60,8 @@ INSERT INTO City (ID, name, stateName)
          , (2,'Seattle','WA')
          , (3,'Redmond','WA');
 
+
+	  select * from persons
 -- Insert into edge table. While inserting into an edge table,
 -- you need to provide the $node_id from $from_id and $to_id columns.
 /* Insert which restaurants each person likes */

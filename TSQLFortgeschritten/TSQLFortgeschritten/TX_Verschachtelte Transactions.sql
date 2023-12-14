@@ -50,6 +50,8 @@ select * from customers2
 begin transaction M1 with MARK --innere merkierte TX.. T! ist immer noch offen
 update customers2 set city = 'Y'
 select * from customers2
+
+select @@trancount
 save transaction InnerSave --Speichern des Zustands. Ein Rollback kann bis hierhin zurückgeführt werden
 select * from customers2
 --rollback Tran M1 --würde einen kompletten TX Reset bedeuten
@@ -57,6 +59,10 @@ select * from customers2
 begin transaction M2 with MARK
 update customers2 set city = 'Z'
 select * from customers2
+select @@TRANCOUNT
+
+
+   select * from customers2
 commit
 rollback tran Innersave --Führt TX zum Zeitpunkt des SavePoint InnerSave zurück
 rollback 

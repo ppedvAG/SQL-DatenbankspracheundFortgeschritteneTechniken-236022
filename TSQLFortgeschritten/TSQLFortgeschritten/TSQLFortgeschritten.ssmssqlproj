@@ -92,8 +92,8 @@
           <FullPath>04_Partitionierung.sql</FullPath>
         </FileNode>
         <FileNode Name="05_FileStreaming_Tables.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>05_FileStreaming_Tables.sql</FullPath>
         </FileNode>
@@ -116,8 +116,8 @@
           <FullPath>09_QueryStore_2_Demo.sql</FullPath>
         </FileNode>
         <FileNode Name="10-Temporäre Tabellen.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>10-Temporäre Tabellen.sql</FullPath>
         </FileNode>
@@ -139,12 +139,6 @@
           <AssociatedConnUserName />
           <FullPath>12_IM_CS.sql</FullPath>
         </FileNode>
-        <FileNode Name="12_Joinarten.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
-          <FullPath>12_Joinarten.sql</FullPath>
-        </FileNode>
         <FileNode Name="13_CS_1_Demo.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
@@ -164,14 +158,14 @@
           <FullPath>15_TemporalTables_1_Aktivieren.sql</FullPath>
         </FileNode>
         <FileNode Name="16_TemporalTables_2_Demo.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>16_TemporalTables_2_Demo.sql</FullPath>
         </FileNode>
         <FileNode Name="17_TemporalTables_Cascade.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>17_TemporalTables_Cascade.sql</FullPath>
         </FileNode>
@@ -181,11 +175,29 @@
           <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>18_TemporalTables_Retention.sql</FullPath>
         </FileNode>
+        <FileNode Name="22_Graph_Shortest.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>22_Graph_Shortest.sql</FullPath>
+        </FileNode>
         <FileNode Name="22_GraphDatabases.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>22_GraphDatabases.sql</FullPath>
+        </FileNode>
+        <FileNode Name="50_TemporalTables_1_Aktivieren.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>22_GraphDatabases.sql</FullPath>
+          <FullPath>50_TemporalTables_1_Aktivieren.sql</FullPath>
+        </FileNode>
+        <FileNode Name="50_TemporalTables_2_Demo.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>50_TemporalTables_2_Demo.sql</FullPath>
         </FileNode>
         <FileNode Name="CTE Aufbau.sql">
           <AssociatedConnectionMoniker />
@@ -218,8 +230,8 @@
           <FullPath>Cursor_Navigation.sql</FullPath>
         </FileNode>
         <FileNode Name="DDL_Trigger simpel.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>DDL_Trigger simpel.sql</FullPath>
         </FileNode>
@@ -248,16 +260,22 @@
           <FullPath>Einfacher Cursor_DEMO.sql</FullPath>
         </FileNode>
         <FileNode Name="ERR_Fehlerbehandlung.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>ERR_Fehlerbehandlung.sql</FullPath>
         </FileNode>
         <FileNode Name="ERR_Sprungmarken.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>ERR_Sprungmarken.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ERR_Throw.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>ERR_Throw.sql</FullPath>
         </FileNode>
         <FileNode Name="ERR_TRY_RAISERROR.sql">
           <AssociatedConnectionMoniker />
@@ -289,12 +307,6 @@
           <AssociatedConnUserName />
           <FullPath>Spieltabelle mit ID.sql</FullPath>
         </FileNode>
-        <FileNode Name="Throw.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
-          <FullPath>Throw.sql</FullPath>
-        </FileNode>
         <FileNode Name="TX_.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
@@ -302,8 +314,8 @@
           <FullPath>TX_.sql</FullPath>
         </FileNode>
         <FileNode Name="TX_Verschachtelte Transactions.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>TX_Verschachtelte Transactions.sql</FullPath>
         </FileNode>
@@ -312,6 +324,18 @@
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Z_Indexsehen.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Z_Joinarten.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Z_Joinarten.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Z_SelfJoin_CrosssJoin.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Z_SelfJoin_CrosssJoin.sql</FullPath>
         </FileNode>
         <FileNode Name="Z_SQL Server 2022 Diagnostic Information Queries.sql">
           <AssociatedConnectionMoniker />

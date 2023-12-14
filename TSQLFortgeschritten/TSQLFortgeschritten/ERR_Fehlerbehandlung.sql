@@ -38,5 +38,27 @@ IF @@ERROR <> 0
 	END
 End try
 Begin Catch
+	rollback
 	select Error_line(), Error_Message(), Error_Severity()	
 end catch
+
+
+
+
+Begin try
+	exec gpdemo10
+end try
+begin catch
+   select Error_message(), ERROR_NUMBER()
+end catch
+
+
+create proc gpdemo5
+as
+select * from demo10
+
+
+
+
+
+
